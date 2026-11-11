@@ -1,2 +1,3 @@
 lights: Alexa, turn on the lights | Alexa, turn off the lights
 steelers: Alexa, what is the score of the Steelers game
+rock: Alexa, play the classic rock station on the Radio
