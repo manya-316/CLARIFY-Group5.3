@@ -1,0 +1,1 @@
+lights: Alexa, turn on the lights | Alexa, turn off the lights

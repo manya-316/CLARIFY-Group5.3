@@ -13,6 +13,7 @@ SAMPLE_RATE = 44100  # Standard audio sample rate
 OUTPUT_FOLDER = "NEW_RECORDING"
 KEYWORDS_DIR = "keywords"      # ADDED: was used below but never defined
 PHRASES_FILE = "phrases.txt"   # ADDED: was used below but never defined
+last_command = {}  #ADDED: toggle to keep track of the last command issued for each keyword, so that we can alternate between two phrases for the same keyword
 
 # Ensure the 'NEW_RECORDING' folder exists
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -66,6 +67,16 @@ def phrase(keyword, phrases_file="phrases.txt"):
 
     # Retrieve the matching prefabricated phrase
     output_phrase = phrase_dictionnary.get(keyword, "Command not recognized.")
+    # ADDED (toggle): if the line in phrases.txt has two phrases separated by "|",
+    # alternate between them each time this keyword is said
+    if "|" in output_phrase:
+        options = [o.strip() for o in output_phrase.split("|")]
+        index = last_command.get(keyword, -1) + 1   # next option after the one used last time
+        if index >= len(options):
+            index = 0
+        last_command[keyword] = index               # remember what we just sent
+        output_phrase = options[index]
+ 
     print(f"Matched Keyword: '{keyword}' -> Output Phrase: '{output_phrase}'")
 
     # Use text-to-speech to play the phrase aloud via the speaker
