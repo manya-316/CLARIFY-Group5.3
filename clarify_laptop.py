@@ -8,9 +8,10 @@ from scipy.io.wavfile import write
 
 # --- Configuration ---
 SAMPLE_RATE = 44100
-OUTPUT_FOLDER = r"C:\Users\nettr\Desktop\University of Ottawa\Engineering Design\design 2\NEW_RECORDING"
-KEYWORDS_DIR = r"C:\Users\nettr\Desktop\University of Ottawa\Engineering Design\design 2\keywords"
-PHRASES_FILE = r"C:\Users\nettr\Desktop\University of Ottawa\Engineering Design\design 2\phrases.txt"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FOLDER = os.path.join(BASE_DIR, "NEW_RECORDING")
+KEYWORDS_DIR = os.path.join(BASE_DIR, "keywords")
+PHRASES_FILE = os.path.join(BASE_DIR, "phrases.txt")
 last_command = {}  # ADDED (toggle): remembers the last command sent for each keyword
 
 # Ensure the 'NEW_RECORDING' folder exists
