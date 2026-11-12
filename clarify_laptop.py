@@ -14,6 +14,7 @@ KEYWORDS_DIR = os.path.join(BASE_DIR, "keywords")
 PHRASES_FILE = os.path.join(BASE_DIR, "phrases.txt")
 last_command = {}  # ADDED (toggle): remembers the last command sent for each keyword
 
+
 # Ensure the 'NEW_RECORDING' folder exists
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
