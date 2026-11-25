@@ -1,4 +1,4 @@
-steelers: Alexa, play 102.5 WDVE Steelers Radio
+pitts: Alexa, play 102.5 WDVE Steelers Radio
 chicago: Alexa, play WGN Chicago 720
 story: Alexa, play a XXX STORY
 rock: Alexa, play the classic rock station on the Radio
