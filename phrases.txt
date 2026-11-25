@@ -1,3 +1,17 @@
 lights: Alexa, turn on the lights | Alexa, turn off the lights
-steelers: Alexa, what is the score of the Steelers game
+steelers: Alexa, play 102.5 WDVE Steelers Radio
+chicago: Alexa, play WGN Chicago 720
+story: Alexa, play a XXX STORY
 rock: Alexa, play the classic rock station on the Radio
+up: ALexa, turn the volume up
+down: Alexa, turn the volume down
+news: Alexa, play cbc news world
+sports: alexa, play the scores of the professional sports leagues today
+redblacks: Alexa, play the Team 1200 on AM Radio
+sister: Alexa, call sister on Facebook messenger video
+ron: Alexa, call Ron on Facebook messenger video
+travis: Alexa, call Travis on Facebook messenger video
+eat: I want to eat
+washroom: I need the washroom
+store: I want to go to the store
+bag: I have something in my bag for you
