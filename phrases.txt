@@ -6,8 +6,8 @@ up: ALexa, turn the volume up
 down: Alexa, turn the volume down
 news: Alexa, play cbc news world
 sports: alexa, play the scores of the professional sports leagues today
-redblacks: Alexa, play the Team 1200 on AM Radio
+blacks: Alexa, play the Team 1200 on AM Radio
 sister: Alexa, call sister on Facebook messenger video
 ron: Alexa, call Ron on Facebook messenger video
 travis: Alexa, call Travis on Facebook messenger video
-ball: Alexa, play the Raptor's radio on TSN 1050
+ball: Alexa, play the Raptor's radio on TSN 1050scp nobutton.py clarify@clarify.local:~/CLARIFY-Group5.3/
